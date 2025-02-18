@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     float a;
     int b, c, d, e, mayor;
-
+    cout << "identificar si el numero es positivo, negativo o cero" << endl;
     std::cout << "Ingrese un número: ";
     std::cin >> a;
 
@@ -15,8 +15,9 @@ int main() {
         std::cout << "El número" << a << " es negativo." << std::endl;
     } else {
         std::cout << "El número es cero." << std::endl;
-    }
+    }// fin de la primera parte
 
+    cout << "identificar si el numero es par o impar" << endl;
     cout << "ingresa un numero: ";
     cin >> b;
 
@@ -24,8 +25,9 @@ int main() {
         cout << "el numero es par" << endl;
     } else {
         cout << "el numero es impar" << endl;
-    }
+    } // fin de la segunda parte
 
+    cout << "identificar si el numero es mayor, menor o igual" << endl;
     cout << "ingresa tres numeros: ";
     cin >> c >> d >> e;
 
@@ -36,8 +38,7 @@ int main() {
     } else {
         mayor = e;
     }
-
-    cout << "El mayor numero es " << mayor << endl;
+    cout << "El mayor numero es " << mayor << endl; // fin de la tercera parte
 
 return 0;
 }
