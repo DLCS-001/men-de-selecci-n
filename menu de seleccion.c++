@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     float a;
-    int b;
+    int b, c, d, e, mayor;
 
     std::cout << "Ingrese un número: ";
     std::cin >> a;
@@ -25,6 +25,19 @@ int main() {
     } else {
         cout << "el numero es impar" << endl;
     }
+
+    cout << "ingresa tres numeros: ";
+    cin >> c >> d >> e;
+
+    if (c >= d && c >= e) {
+        mayor = c;
+    } else if (d >= c && d >= e) {
+        mayor = d;
+    } else {
+        mayor = e;
+    }
+
+    cout << "El mayor numero es " << mayor << endl;
 
 return 0;
 }
