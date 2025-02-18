@@ -48,8 +48,20 @@ int main() {
     if ((año % 4 == 0 && año % 100 != 0) || (año % 400 == 0)) {
         cout << "El año " << año << " es bisiesto." << endl;
     } else {
-        cout << "El año " << año << " no es bisiesto." << endl;
+    cout << "El año " << año << " no es bisiesto." << endl;
     } // fin de la cuarta parte
+
+    cout << "Identificar si una letra es vocal o consonante" << endl;
+    char letra;
+    cout << "Ingrese una letra: ";
+    cin >> letra;
+
+    if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' ||
+        letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U') {
+        cout << "La letra " << letra << " es una vocal." << endl;
+    } else {
+        cout << "La letra " << letra << " es una consonante." << endl;
+    } // fin de la quinta parte
 
 return 0;
 }
