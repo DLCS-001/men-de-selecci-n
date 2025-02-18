@@ -38,7 +38,8 @@ int main() {
     } else {
         mayor = e;
     }
-    cout << "El mayor numero es " << mayor << endl; // fin de la tercera parte
+    cout << "El mayor numero es " << mayor << endl; 
+    // fin de la tercera parte
 
     cout << "Identificar si un año es bisiesto" << endl;
     int año;
@@ -63,5 +64,27 @@ int main() {
         cout << "La letra " << letra << " es una consonante." << endl;
     } // fin de la quinta parte
 
-return 0;
+
+    cout << "\n\nVerificar si un numero es primo" << endl;
+    int num, i, flag = 0;
+    cout << "Ingrese un numero: ";
+    cin >> num;
+
+    if (num <= 1) {
+        cout << num << " no es un numero primo." << endl;
+    } else {
+        for (i = 2; i <= num / 2; ++i) {
+            if (num % i == 0) {
+                flag = 1;
+                break;
+            }
+        }
+        if (flag == 0)
+            cout << num << " es un numero primo." << endl;
+        else
+            cout << num << " no es un numero primo." << endl;
+    } // fin de la sexta parte
+    
+    return 0;
+
 }
