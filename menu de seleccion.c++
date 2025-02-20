@@ -4,7 +4,8 @@ using namespace std;
 
 int main() {
     float a;
-    int b, c, d, e, mayor, año, f;
+    int b, c, d, e, mayor, año, f, nota;
+
     cout << "identificar si el numero es positivo, negativo o cero" << endl;
     std::cout << "Ingrese un número: ";
     std::cin >> a;
@@ -106,7 +107,16 @@ int main() {
     // fin de la octava parte
 
 
+    cout << "calificacion segun su nota" << endl;
+    cout << "ingrese su nota: ";
+    cin >> nota;
+    if (nota >= 90) cout << "calificaión A";
+    else if (nota >= 80) cout << "calificacion B";
+    else if (nota >= 70) cout << "calificacion C";
+    else if (nota >= 60) cout << "calificacion D";
+    else cout << "calificacion F";
     
+
     return 0;
 
 }
