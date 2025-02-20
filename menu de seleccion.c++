@@ -6,6 +6,8 @@ int main() {
     float a;
     int b, c, d, e, mayor, año, f, nota, g, h, i, j, k, l, m, n, o, p, q, r, s, t;
 
+    // estrucctura de control if else
+
     cout << "identificar si el numero es positivo, negativo o cero" << endl;
     std::cout << "Ingrese un número: ";
     std::cin >> a;
@@ -125,7 +127,19 @@ int main() {
     i = g - (g * h / 100);
     cout << "el precio con descuento es: " << i << endl;
     // fin de la parte 10
+    // fin de la estructura de control if else
 
+
+    // estructura de control while
+    cout << "iprimir los numeros del 1 al 20" << endl;
+    j = 1;
+    while (j <= 20) {
+        cout << j << endl;
+        j++;
+    } // fin de la parte 1
+
+
+    
 
     return 0;
 
