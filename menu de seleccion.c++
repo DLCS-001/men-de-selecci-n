@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     float a;
-    int b, c, d, e, mayor;
+    int b, c, d, e, mayor, año;
     cout << "identificar si el numero es positivo, negativo o cero" << endl;
     std::cout << "Ingrese un número: ";
     std::cin >> a;
@@ -85,6 +85,18 @@ int main() {
             cout << num << " no es un numero primo." << endl;
     } // fin de la sexta parte
     
+
+    cout << "Verificar si un año de nacimiento es válido" << endl;
+    cout << "ingrese su año de nacimiento";
+    cin >> año;
+    if (año > 1900 && año < 2025)
+        cout << "el año es valido";
+    else
+        cout << "el año no es valido";
+    // fin de la septima parte
+
+    
+
     return 0;
 
 }
