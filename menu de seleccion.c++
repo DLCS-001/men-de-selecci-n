@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     float a;
-    int b, c, d, e, mayor, año, f, nota, g, h, i, j, k, l, m, n, o, p, q, r, s, t;
+    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o, p, q, r, s, t;
 
     // estrucctura de control if else
 
@@ -124,8 +124,8 @@ int main() {
     cin >> g;
     cout << "ingrese el descuento: ";
     cin >> h;
-    i = g - (g * h / 100);
-    cout << "el precio con descuento es: " << i << endl;
+    hh = g - (g * h / 100);
+    cout << "el precio con descuento es: " << hh << endl;
     // fin de la parte 10
     // fin de la estructura de control if else
 
@@ -146,6 +146,16 @@ int main() {
         i++;
     } // fin de la parte 2
     
+
+    cout << "suma de númeors positivos (negativo para terminar)" << endl;
+    cout << "inglese números positivos (negativo para terminar)" << endl;
+    while (true) {
+        cin >> l;
+        if (l < 0) break;
+        m += l;
+    }
+    cout << "la suma de los numeros positivos es: " << m << endl;
+    // fin de la parte 3
 
     return 0;
 
