@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     float a;
-    int b, c, d, e, mayor, año, f, nota;
+    int b, c, d, e, mayor, año, f, nota, g, h, i, j, k, l, m, n, o, p, q, r, s, t;
 
     cout << "identificar si el numero es positivo, negativo o cero" << endl;
     std::cout << "Ingrese un número: ";
@@ -16,7 +16,7 @@ int main() {
         std::cout << "El número" << a << " es negativo." << std::endl;
     } else {
         std::cout << "El número es cero." << std::endl;
-    }// fin de la primera parte
+    }// fin de la parte 1
 
     cout << "identificar si el numero es par o impar" << endl;
     cout << "ingresa un numero: ";
@@ -26,7 +26,7 @@ int main() {
         cout << "el numero es par" << endl;
     } else {
         cout << "el numero es impar" << endl;
-    } // fin de la segunda parte
+    } // fin de la parte 2
 
     cout << "identificar si el numero es mayor, menor o igual" << endl;
     cout << "ingresa tres numeros: ";
@@ -40,7 +40,7 @@ int main() {
         mayor = e;
     }
     cout << "El mayor numero es " << mayor << endl; 
-    // fin de la tercera parte
+    // fin de la parte 3
 
     cout << "Identificar si un año es bisiesto" << endl;
     int año;
@@ -51,7 +51,7 @@ int main() {
         cout << "El año " << año << " es bisiesto." << endl;
     } else {
     cout << "El año " << año << " no es bisiesto." << endl;
-    } // fin de la cuarta parte
+    } // fin de la parte 4
 
     cout << "Identificar si una letra es vocal o consonante" << endl;
     char letra;
@@ -63,7 +63,7 @@ int main() {
         cout << "La letra " << letra << " es una vocal." << endl;
     } else {
         cout << "La letra " << letra << " es una consonante." << endl;
-    } // fin de la quinta parte
+    } // fin de la parte 5
 
 
     cout << "\n\nVerificar si un numero es primo" << endl;
@@ -84,7 +84,7 @@ int main() {
             cout << num << " es un numero primo." << endl;
         else
             cout << num << " no es un numero primo." << endl;
-    } // fin de la sexta parte
+    } // fin de la parte 6
     
 
     cout << "Verificar si un año de nacimiento es válido" << endl;
@@ -94,7 +94,7 @@ int main() {
         cout << "el año es valido";
     else
         cout << "el año no es valido";
-    // fin de la septima parte
+    // fin de la parte 7
 
 
     cout << "verisicar si un número es multiplo de 5 y de 7" << endl;
@@ -104,7 +104,7 @@ int main() {
         cout << "el numero es multiplo de 5 y de 7";
     else
         cout << "el numero no es multiplo de 5 y de 7";
-    // fin de la octava parte
+    // fin de la parte 8
 
 
     cout << "calificacion segun su nota" << endl;
@@ -115,7 +115,17 @@ int main() {
     else if (nota >= 70) cout << "calificacion C";
     else if (nota >= 60) cout << "calificacion D";
     else cout << "calificacion F";
-    
+    // fin de la parte 9
+
+    cout << "calculadora de descuento" << endl;
+    cout << "ingrese el precio del producto: ";
+    cin >> g;
+    cout << "ingrese el descuento: ";
+    cin >> h;
+    i = g - (g * h / 100);
+    cout << "el precio con descuento es: " << i << endl;
+    // fin de la parte 10
+
 
     return 0;
 
