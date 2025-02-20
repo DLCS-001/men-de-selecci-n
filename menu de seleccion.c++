@@ -138,7 +138,13 @@ int main() {
         j++;
     } // fin de la parte 1
 
-
+    cout << "los numeros del 1 hasta el numero ingresado" << endl;
+    cout << "ingrese un numero: ";
+    cin >> k;
+    while (i <= k) {
+        cout << i << " ";
+        i++;
+    } // fin de la parte 2
     
 
     return 0;
