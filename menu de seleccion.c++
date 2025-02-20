@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     float a;
-    int b, c, d, e, mayor, año;
+    int b, c, d, e, mayor, año, f;
     cout << "identificar si el numero es positivo, negativo o cero" << endl;
     std::cout << "Ingrese un número: ";
     std::cin >> a;
@@ -95,8 +95,18 @@ int main() {
         cout << "el año no es valido";
     // fin de la septima parte
 
-    
 
+    cout << "verisicar si un número es multiplo de 5 y de 7" << endl;
+    cout << "ingrese un numero: ";
+    cin >> f;
+    if (f % 5 == 0 && f % 7 == 0)
+        cout << "el numero es multiplo de 5 y de 7";
+    else
+        cout << "el numero no es multiplo de 5 y de 7";
+    // fin de la octava parte
+
+
+    
     return 0;
 
 }
