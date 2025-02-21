@@ -1,18 +1,19 @@
 #include <iostream>
 using namespace std;
 
+bool esPrimo(int ee) {
+    if (ee <= 1) return false;
+    for (int i = 2; i * i <= ee; i++) {
+        if (ee % i == 0) return false;
+    }
+    return true;
+}
 
 int main() {
     float a;
-    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t, u, v, w, x, y, z, producto, num, aa, bb = 0, cc, dd, ff, gg, ii, jj, kk, ll, mm, nn, oo, pp, qq, rr, ss, tt, uu, vv, ww, xx, yy, zz;
+    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t, u, v, w, x, y, z, producto, num, aa, bb = 0, cc, dd, ff, gg = 0, hhh = 1, jj, kk, ll, mm, nn, oo, pp, qq, rr, ss, tt, uu, vv, ww, xx, yy, zz, suma = 0;
 
-    bool esPrimo(int ee) {
-        if (ee <= 1) return false;
-        for (int i = 2; i * i ee; i++) {
-            if (ee % i == 0) return false;
-        }
-        return true;
-    }
+    
 
     // estrucctura de control if else
 
@@ -294,8 +295,16 @@ int main() {
     } // fin de la parte 6
 
 
+    cout << "imprimir los primeros 10 numeros de la serie fibonacci" << endl;
+    for (int i = 0; i<10; i++) {
+        cout << gg << " ";
+        jj = gg + hhh;
+        gg = hhh;
+        hhh = jj;
+    }
+    cout << endl;
+    // fin de la parte 7
 
 
-    
 return 0;
 }
