@@ -306,5 +306,12 @@ int main() {
     // fin de la parte 7
 
 
+    cout << "sumar 100 numeros naturales" << endl;
+     for (int i = 1; i <= 100; i++)
+        gg += i;
+
+    cout << "la suma de los 100 numeros naturales es: " << gg << endl;
+    // fin de la parte 8
+
 return 0;
 }
