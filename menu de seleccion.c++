@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     float a;
-    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t, u, v, w, x, y, z;
+    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t, u, v, w, x, y, z, producto;
 
     // estrucctura de control if else
 
@@ -223,5 +223,17 @@ int main() {
         i++;
     } // fin de la parte 9
 
+
+    cout << "calculo de los primeros 10 numeros naturales" << endl;
+    long long int producto = 1;
+    while (i <= 10) {
+        producto *= i;
+        i++;
+    } // fin de la parte 10
+    // fin de la estructura de control while
+
+
+
+    
 return 0;
 }
