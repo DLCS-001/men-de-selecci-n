@@ -4,7 +4,15 @@ using namespace std;
 
 int main() {
     float a;
-    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t, u, v, w, x, y, z, producto, num, aa, bb = 0, cc, dd, ee, ff, gg, ii, jj, kk, ll, mm, nn, oo, pp, qq, rr, ss, tt, uu, vv, ww, xx, yy, zz;
+    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t, u, v, w, x, y, z, producto, num, aa, bb = 0, cc, dd, ff, gg, ii, jj, kk, ll, mm, nn, oo, pp, qq, rr, ss, tt, uu, vv, ww, xx, yy, zz;
+
+    bool esPrimo(int ee) {
+        if (ee <= 1) return false;
+        for (int i = 2; i * i ee; i++) {
+            if (ee % i == 0) return false;
+        }
+        return true;
+    }
 
     // estrucctura de control if else
 
@@ -268,5 +276,12 @@ int main() {
 
 
 
+    cout << "imprimir los numeros primos del 1 al 50" << endl;
+    for (int i = 1; i <= 50; i++)
+        if (esPrimo(i))
+            cout << i << " ";
+
+    cout << endl;
+    // fin de la parte 5
 return 0;
 }
