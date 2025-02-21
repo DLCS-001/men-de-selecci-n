@@ -283,5 +283,19 @@ int main() {
 
     cout << endl;
     // fin de la parte 5
+
+
+    cout << "imprimir lla sei 1,3,6,10,15,.., n" << endl;
+    cout << "Ingrese un numero: ";
+    cin >> ff;
+    for (int i =1; suma + i <= ff; i++) {
+        suma += i;
+        cout << suma << " ";
+    } // fin de la parte 6
+
+
+
+
+    
 return 0;
 }
