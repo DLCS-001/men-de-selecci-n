@@ -203,6 +203,19 @@ int main() {
     else
         cout << "la media es: " << (double)w / x << endl;
 
-    return 0;
+  
     // fin de la parte 7
+
+
+
+    cout << "contador de numeors" << endl;
+    do {
+        cout << "ingrese un numero: (0 para terminar)";
+        cin >> y;
+    } while (y != 0);
+    cout << "fin del programa." << endl;
+    // fin de la parte 8
+
+
+return 0;
 }
