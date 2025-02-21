@@ -217,5 +217,11 @@ int main() {
     // fin de la parte 8
 
 
+    cout << "primeros 10 numeros naturales y su cuadrado" << endl;
+    while (i <= 10) {
+        cout << i << "^2 = " << i * i << endl;
+        i++;
+    } // fin de la parte 9
+
 return 0;
 }
