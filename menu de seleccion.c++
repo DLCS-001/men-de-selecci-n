@@ -9,10 +9,16 @@ bool esPrimo(int ee) {
     return true;
 }
 
+bool esPrimo(int ll) {
+    if (ll <= 1) return false;
+    for (int i = 2; i * i <= ll; i++)
+        if (ll % i == 0) return false;
+    return true;
+}
+
 int main() {
     float a;
-    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t, u, v, w, x, y, z, producto, num, aa, bb = 0, cc, dd, ff, gg = 0, hhh = 1, jj, kk, ll, mm, nn, oo, pp, qq, rr, ss, tt, uu, vv, ww, xx, yy, zz, suma = 0;
-
+    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t, u, v, w, x, y, z, producto, num, aa, bb = 0, cc, dd, ff, gg = 0, hhh = 1, jj, kk, ll=2;
     
 
     // estrucctura de control if else
@@ -289,9 +295,9 @@ int main() {
     cout << "imprimir lla sei 1,3,6,10,15,.., n" << endl;
     cout << "Ingrese un numero: ";
     cin >> ff;
-    for (int i =1; suma + i <= ff; i++) {
-        suma += i;
-        cout << suma << " ";
+    for (int i =1; gg + i <= ff; i++) {
+        gg += i;
+        cout << gg << " ";
     } // fin de la parte 6
 
 
@@ -324,6 +330,18 @@ int main() {
             cout << i << " ";
     cout << endl;
     // fin de la parte 9
+
+
+    cout <<"10 numeros primos" << endl;
+    while (ll <= 10) {
+        if (esPrimo(ll)) {
+            cout << ll << " ";
+            gg++;
+        }
+        ll++;
+    }
+    cout << endl;
+    // fin de la parte 10
 
 return 0;
 }
