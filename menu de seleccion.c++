@@ -256,5 +256,17 @@ int main() {
     // fin de la parte 3
 
 
+
+
+    cout << "calular el factorial de un numero" << endl;
+    cout << "Ingrese un numero: ";
+    cin >> cc;
+    for (int i = 1; i <= cc; i++)
+        dd *= i;
+    cout << "El factorial de " << cc << " es " << dd << endl;
+    // fin de la parte 4
+
+
+
 return 0;
 }
