@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     float a;
-    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t, u, v, w, x, y, z, producto, num;
+    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t, u, v, w, x, y, z, producto, num, aa, bb = 0, cc, dd, ee, ff, gg, ii, jj, kk, ll, mm, nn, oo, pp, qq, rr, ss, tt, uu, vv, ww, xx, yy, zz;
 
     // estrucctura de control if else
 
@@ -245,7 +245,15 @@ int main() {
 
     for (int i = 1; i <= 10; i++)
         cout << num << " x " << i << " = " << num * i << endl;
+    // fin de la parte 2
 
+    cout << "sumar numeros hasta n" << endl;
+    cout << "Ingrese un numero: ";
+    cin >> aa;
+    for (int i = 2; i <= aa; i += 2)
+        bb += i;
+    cout << "la suma de los numeros pares es: " << bb << endl;
+    // fin de la parte 3
 
 
 return 0;
