@@ -168,6 +168,19 @@ int main() {
         p = o;
         o = q;
     } // fin de la parte 4
+
+
+    cout << "número que sea mayor a 100" << endl;
+    while (r <= 100) {
+        cout << "ingrese un numero: ";
+        cin >> s;
+        r += s;
+    } 
+    
+    cout << "la suma de los numeros ingresados es: " << r << endl;
+    // fin de la parte 5
+
+
     return 0;
 
 }
