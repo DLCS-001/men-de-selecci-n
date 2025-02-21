@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     float a;
-    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t;
+    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t, u, v, w, x, y, z;
 
     // estrucctura de control if else
 
@@ -180,6 +180,14 @@ int main() {
     cout << "la suma de los numeros ingresados es: " << r << endl;
     // fin de la parte 5
 
+
+    cout << "imprimir los numeros hasta el numero ingresado" << endl;
+    cout << "ingrese un numero: ";
+    cin >> t;
+    while (u <= t) {
+        cout << u << " ";
+        u+= 2;
+    } // fin de la parte 6
 
     return 0;
 
