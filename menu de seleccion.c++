@@ -233,7 +233,12 @@ int main() {
     // fin de la estructura de control while
 
 
+    // estructura de control for
+    cout << "imprimir los numeros pares del 2 al 20" << endl;
+    for (int i = 2; i <= 20; i += 2) {
+        cout << i << " ";
+    } // fin de la parte 1
 
-    
+
 return 0;
 }
