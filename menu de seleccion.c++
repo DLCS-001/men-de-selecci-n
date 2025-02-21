@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     float a;
-    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o, p, q, r, s, t;
+    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t;
 
     // estrucctura de control if else
 
@@ -157,6 +157,17 @@ int main() {
     cout << "la suma de los numeros positivos es: " << m << endl;
     // fin de la parte 3
 
+    
+    // secuencia fibonacci
+    cout << "secuencia fibonacci" << endl;
+    cout << "ingrese el numero de elementos: ";
+    cin >> n;
+    while ( o <= n) {
+        cout << p << " ";
+        q = p + o;
+        p = o;
+        o = q;
+    } // fin de la parte 4
     return 0;
 
 }
