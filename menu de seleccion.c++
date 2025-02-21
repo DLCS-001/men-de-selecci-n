@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     float a;
-    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t, u, v, w, x, y, z, producto;
+    int b, c, d, e, mayor, año, f, nota, g, h, hh, j, k, l, m, n, o = 0, p = 1, q, r, s, t, u, v, w, x, y, z, producto, num;
 
     // estrucctura de control if else
 
@@ -238,6 +238,14 @@ int main() {
     for (int i = 2; i <= 20; i += 2) {
         cout << i << " ";
     } // fin de la parte 1
+
+    cout << "tabla de multiplicar" << endl;
+    cout << "Ingrese un numero: ";
+    cin >> num;
+
+    for (int i = 1; i <= 10; i++)
+        cout << num << " x " << i << " = " << num * i << endl;
+
 
 
 return 0;
