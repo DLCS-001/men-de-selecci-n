@@ -313,5 +313,17 @@ int main() {
     cout << "la suma de los 100 numeros naturales es: " << gg << endl;
     // fin de la parte 8
 
+
+
+    cout << "los divisolers de un numero ingresado" << endl;
+    cout << "Ingrese un numero: ";
+    cin >> kk;
+    cout << "Los divisores de " << kk << " son: ";
+    for (int i = 1; i <= kk; i++)
+        if (kk % i == 0)
+            cout << i << " ";
+    cout << endl;
+    // fin de la parte 9
+
 return 0;
 }
