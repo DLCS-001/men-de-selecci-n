@@ -189,6 +189,20 @@ int main() {
         u+= 2;
     } // fin de la parte 6
 
-    return 0;
 
+    cout << "calculadora de serie de numeros" << endl;
+    cout << "ingrese un numeros (o para terminar): ";
+    while (true) {
+        cin >> v;
+        if (v == 0) break;
+        w += v;
+        x++;
+    }
+    if (x == 0)
+        cout << "no se ingresaron numeros";
+    else
+        cout << "la media es: " << (double)w / x << endl;
+
+    return 0;
+    // fin de la parte 7
 }
