@@ -14,8 +14,8 @@ bool esPrimo(int n) // Solo necesitas una función
     return true;
 }
 
-
-void limpiarPantalla() {
+void limpiarPantalla()
+{
     cout << string(50, '\n');
 }
 
@@ -101,6 +101,7 @@ void ejecutarEjercicioIfElse(int opcion)
     switch (opcion)
     {
     case 1:
+    {
         float a;
         cout << "identificar si el numero es positivo, negativo o cero" << endl;
         std::cout << "Ingrese un número: ";
@@ -119,7 +120,9 @@ void ejecutarEjercicioIfElse(int opcion)
             std::cout << "El número es cero." << std::endl;
         } // fin de la parte 1
         break;
+    }
     case 2:
+    {
         int b;
         cout << "identificar si el numero es par o impar" << endl;
         cout << "ingresa un numero: ";
@@ -134,7 +137,9 @@ void ejecutarEjercicioIfElse(int opcion)
             cout << "el numero es impar" << endl;
         } // fin de la parte 2
         break;
+    }
     case 3:
+    {
         int c, d, e, mayor;
         cout << "identificar si el numero es mayor, menor o igual" << endl;
         cout << "ingresa tres numeros: ";
@@ -155,7 +160,9 @@ void ejecutarEjercicioIfElse(int opcion)
         cout << "El mayor numero es " << mayor << endl;
         // fin de la parte 3
         break;
+    }
     case 4:
+    {
         cout << "Identificar si un año es bisiesto" << endl;
         int año;
         cout << "Ingrese un año: ";
@@ -170,7 +177,9 @@ void ejecutarEjercicioIfElse(int opcion)
             cout << "El año " << año << " no es bisiesto." << endl;
         } // fin de la parte 4
         break;
+    }
     case 5:
+    {
         cout << "Identificar si una letra es vocal o consonante" << endl;
         char letra;
         cout << "Ingrese una letra: ";
@@ -186,7 +195,9 @@ void ejecutarEjercicioIfElse(int opcion)
             cout << "La letra " << letra << " es una consonante." << endl;
         } // fin de la parte 5
         break;
+    }
     case 6:
+    {
         cout << "\n\nVerificar si un numero es primo" << endl;
         int num, i, flag = 0;
         cout << "Ingrese un numero: ";
@@ -212,17 +223,22 @@ void ejecutarEjercicioIfElse(int opcion)
                 cout << num << " no es un numero primo." << endl;
         } // fin de la parte 6
         break;
+    }
     case 7:
+    {
         cout << "Verificar si un año de nacimiento es válido" << endl;
-        cout << "ingrese su año de nacimiento";
-        cin >> año;
-        if (año > 1900 && año < 2024)
+        int añoNacimiento;
+        cout << "ingrese su año de nacimiento: ";
+        cin >> añoNacimiento;
+        if (añoNacimiento > 1900 && añoNacimiento < 2024)
             cout << "el año es valido";
         else
             cout << "el año no es valido";
         // fin de la parte 7
         break;
+    }
     case 8:
+    {
         int f;
         cout << "Verificar si un número es múltiplo de 5 y 7" << endl;
         cout << "ingrese un numero: ";
@@ -233,7 +249,9 @@ void ejecutarEjercicioIfElse(int opcion)
             cout << "el numero no es multiplo de 5 y de 7";
         // fin de la parte 8
         break;
+    }
     case 9:
+    {
         int nota;
         cout << "calificacion segun su nota" << endl;
         cout << "ingrese su nota: ";
@@ -250,7 +268,9 @@ void ejecutarEjercicioIfElse(int opcion)
             cout << "calificacion F";
         // fin de la parte 9
         break;
+    }
     case 10:
+    {
         int g, h, hh;
         cout << "calculadora de descuento" << endl;
         cout << "ingrese el precio del producto: ";
@@ -262,6 +282,7 @@ void ejecutarEjercicioIfElse(int opcion)
         // fin de la parte 10
         break;
     }
+    }
     pausar();
 }
 
@@ -271,6 +292,7 @@ void ejecutarEjercicioWhile(int opcion)
     switch (opcion)
     {
     case 1:
+    {
         int j;
         cout << "Imprimir los números del 1 al 20" << endl;
         j = 1;
@@ -280,7 +302,9 @@ void ejecutarEjercicioWhile(int opcion)
             j++;
         } // fin de la parte 1
         break;
+    }
     case 2:
+    {
         int k, i = 1;
         cout << "los numeros del 1 hasta el numero ingresado" << endl;
         cout << "ingrese un numero: ";
@@ -291,7 +315,9 @@ void ejecutarEjercicioWhile(int opcion)
             i++;
         } // fin de la parte 2
         break;
+    }
     case 3:
+    {
         int l, m = 0;
         cout << "suma de númeors positivos (negativo para terminar)" << endl;
         cout << "Ingrese números positivos (negativo para terminar)" << endl;
@@ -305,7 +331,9 @@ void ejecutarEjercicioWhile(int opcion)
         cout << "la suma de los numeros positivos es: " << m << endl;
         // fin de la parte 3
         break;
+    }
     case 4:
+    {
         int n, o = 1, p = 0, q;
         // secuencia fibonacci
         cout << "secuencia fibonacci" << endl;
@@ -319,8 +347,10 @@ void ejecutarEjercicioWhile(int opcion)
             o = q;
         } // fin de la parte 4
         break;
+    }
     case 5:
-        int s, r;
+    {
+        int s, r = 0;
         cout << "número que sea mayor a 100" << endl;
         while (r <= 100)
         {
@@ -332,7 +362,9 @@ void ejecutarEjercicioWhile(int opcion)
         cout << "la suma de los numeros ingresados es: " << r << endl;
         // fin de la parte 5
         break;
+    }
     case 6:
+    {
         int u, t;
         cout << "imprimir los numeros hasta el numero ingresado" << endl;
         cout << "ingrese un numero: ";
@@ -343,7 +375,9 @@ void ejecutarEjercicioWhile(int opcion)
             u += 2;
         } // fin de la parte 6
         break;
+    }
     case 7:
+    {
         int x, w, v;
         cout << "calculadora de serie de numeros" << endl;
         cout << "ingrese un numeros (o para terminar): ";
@@ -361,7 +395,9 @@ void ejecutarEjercicioWhile(int opcion)
             cout << "la media es: " << (double)w / x << endl;
         // fin de la parte 7
         break;
+    }
     case 8:
+    {
         int y;
         cout << "contador de numeors" << endl;
         do
@@ -372,15 +408,22 @@ void ejecutarEjercicioWhile(int opcion)
         cout << "fin del programa." << endl;
         // fin de la parte 8
         break;
+    }
     case 9:
+    {
+        int i = 1;
         cout << "primeros 10 numeros naturales y su cuadrado" << endl;
+
         while (i <= 10)
         {
             cout << i << "^2 = " << i * i << endl;
             i++;
         } // fin de la parte 9
         break;
+    }
     case 10:
+    {
+        int i = 1;
         cout << "calculo de los primeros 10 numeros naturales" << endl;
         long long int producto = 1;
         while (i <= 10)
@@ -389,6 +432,7 @@ void ejecutarEjercicioWhile(int opcion)
             i++;
         } // fin de la parte 10
         break;
+    }
     }
     pausar();
 }
@@ -399,6 +443,7 @@ void ejecutarEjercicioFor(int opcion)
     switch (opcion)
     {
     case 1:
+    {
         int num;
         cout << "imprimir los numeros pares del 2 al 20" << endl;
         for (int i = 2; i <= 20; i += 2)
@@ -406,7 +451,10 @@ void ejecutarEjercicioFor(int opcion)
             cout << i << " ";
         } // fin de la parte 1
         break;
+    }
     case 2:
+    {
+        int num;
         cout << "tabla de multiplicar" << endl;
         cout << "Ingrese un numero: ";
         cin >> num;
@@ -415,7 +463,9 @@ void ejecutarEjercicioFor(int opcion)
             cout << num << " x " << i << " = " << num * i << endl;
         // fin de la parte 2
         break;
+    }
     case 3:
+    {
         int aa, bb;
         cout << "sumar numeros hasta n" << endl;
         cout << "Ingrese un numero: ";
@@ -425,7 +475,9 @@ void ejecutarEjercicioFor(int opcion)
         cout << "la suma de los numeros pares es: " << bb << endl;
         // fin de la parte 3
         break;
+    }
     case 4:
+    {
         int dd = 1, cc;
         cout << "Calcular el factorial de un numero" << endl;
         cout << "Ingrese un numero: ";
@@ -435,7 +487,9 @@ void ejecutarEjercicioFor(int opcion)
         cout << "El factorial de " << cc << " es " << dd << endl;
         // fin de la parte 4
         break;
+    }
     case 5:
+    {
         cout << "imprimir los numeros primos del 1 al 50" << endl;
         for (int i = 1; i <= 50; i++)
             if (esPrimo(i))
@@ -444,7 +498,9 @@ void ejecutarEjercicioFor(int opcion)
         cout << endl;
         // fin de la parte 5
         break;
+    }
     case 6:
+    {
         int ff, sum = 0;
         cout << "imprimir lla sei 1,3,6,10,15,.., n" << endl;
         cout << "Ingrese un numero: ";
@@ -457,8 +513,10 @@ void ejecutarEjercicioFor(int opcion)
         cout << endl;
         // fin de la parte 6
         break;
+    }
     case 7:
-        int jj, hhh = 1,  gg = 0;
+    {
+        int jj, hhh = 1, gg = 0;
         cout << "imprimir los primeros 10 numeros de la serie fibonacci" << endl;
         for (int i = 0; i < 10; i++)
         {
@@ -470,7 +528,10 @@ void ejecutarEjercicioFor(int opcion)
         cout << endl;
         // fin de la parte 7
         break;
+    }
     case 8:
+    {
+        int gg = 0;
         cout << "sumar 100 numeros naturales" << endl;
         for (int i = 1; i <= 100; i++)
             gg += i;
@@ -478,7 +539,9 @@ void ejecutarEjercicioFor(int opcion)
         cout << "la suma de los 100 numeros naturales es: " << gg << endl;
         // fin de la parte 8
         break;
+    }
     case 9:
+    {
         int kk;
         cout << "Los divisores de un número ingresado" << endl;
         cout << "Ingrese un numero: ";
@@ -490,7 +553,9 @@ void ejecutarEjercicioFor(int opcion)
         cout << endl;
         // fin de la parte 9
         break;
+    }
     case 10:
+    {
         int nume = 2, contador = 0;
         cout << "10 numeros primos" << endl;
         while (contador < 10)
@@ -505,6 +570,7 @@ void ejecutarEjercicioFor(int opcion)
         cout << endl;
         // fin de la parte 10
         break;
+    }
     }
     pausar();
 }
